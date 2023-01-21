@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:background="#240046"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="MangaKu"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textSize="30sp"
+        android:textColor="#FF9E00"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="by @AsepSobarudin"
+        android:textAlignment="center"
+        android:textColor="#E0AAFF"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="10dp"/>
+</RelativeLayout>

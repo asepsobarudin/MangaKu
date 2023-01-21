@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AboutAccount"
+    android:orientation="vertical"
+    android:background="#240046"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/header_border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="About"
+            android:textColor="#FF9E00"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins_semi_bold"/>
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:src="@drawable/arrow_left_s_line"
+            android:background="@drawable/header_border"
+            android:onClick="btnBack"
+            android:focusable="true"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/circle_border"
+            android:padding="10dp"
+            android:src="@drawable/user_image" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/border_radius"
+        android:layout_marginTop="20dp" >
+        <TextView
+            android:id="@+id/getUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#24FF00"/>
+
+        <TextView
+            android:id="@+id/getEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="your@email.com"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#FF9E00"/>
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#ff0000"
+            android:text="Logout"
+            android:onClick="btnLogout"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>

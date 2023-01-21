@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Lisv View merupakan layout card yang digunakan pada layout Linear Layout
+pada Home activity-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/item_border"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/tv_image"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:background="#818181"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="@string/title"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#FF9E00"/>
+
+        <TextView
+            android:id="@+id/tv_synopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail"
+            android:maxLines="4"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:textColor="#FF9100"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="#10002B"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:background="@drawable/border_radius"
+        android:padding="5dp"
+        android:layout_height="600dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textColor="#E0AAFF"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input_rounded"
+                app:startIconDrawable="@drawable/mail_line"
+                app:startIconTint="#E0AAFF"
+                android:gravity="center"
+                android:textColorHint="#E0AAFF"
+                android:hint="your@email.com"
+                app:hintTextColor="#E0AAFF"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <EditText
+                    android:id="@+id/inputEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_rounded"
+                    android:textColor="#E0AAFF"
+                    android:textColorHint="#E0AAFF"
+                    android:foregroundTint="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:textSize="14sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input_rounded"
+                app:startIconDrawable="@drawable/key_2_line"
+                app:startIconTint="#E0AAFF"
+                android:textColorHint="#E0AAFF"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#E0AAFF"
+                android:hint="Password"
+                app:hintTextColor="#E0AAFF"
+                app:boxStrokeWidth="0dp"
+                android:gravity="center"
+                app:boxStrokeWidthFocused="0dp">
+
+                <EditText
+                    android:id="@+id/inputPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_rounded"
+                    android:textColor="#E0AAFF"
+                    android:textColorHint="#E0AAFF"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:textSize="14sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="end">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password?"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:textSize="12sp"
+                    android:textColor="#E0AAFF"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Login"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:onClick="btnLogin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:gravity="bottom">
+                <TextView
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:textColor="#E0AAFF"
+                    android:onClick="Register"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
